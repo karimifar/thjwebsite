@@ -1,0 +1,50 @@
+*{
+    font-family: "effra" ,sans-serif;
+}
+
+.thjBlue{
+    fill:#124E78;
+}
+
+.thjOrange{
+    fill:#E04A18;
+}
+.thjWhite{
+    fill:#fff;
+}
+
+#sec-nav{
+    background: #555;
+    height: 28px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#sec-nav-links{
+    margin-right: 10%;
+    float: right;
+
+}
+.sec-nav-link{
+    float: left;
+    color: white;
+    padding: 8px 12px;
+    font-size: 13px;
+
+}
+.sec-nav-li{
+    text-transform: uppercase;
+}
+
+#main-nav{
+    /* margin: 0 10%; */
+    border-bottom: #ddd 2px solid;
+    background: #fff;
+}
+#main-nav-logo{
+    margin-left: 20%;
+    padding: 20px 0;
+    width: 340px;
+}
