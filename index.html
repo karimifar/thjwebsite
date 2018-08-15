@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/cox2imp.css">
     <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="Assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/responsive/600less.css">
     <title>Texas Health Journal</title>
 </head>
 
@@ -201,7 +203,7 @@
                     </a>
                 </ul>
                 <div id="ut-inst-drop" class="dropdown">
-                    <p id="ut-inst-btn" class="main-nav-li">News by<br>UT INSTITUTIONS<i class="fas fa-caret-down"></i></p>
+                    <p tabindex="4" id="ut-inst-btn" class="main-nav-li" onclick="showDropDown();">News by<br>INSTITUTIONS<i class="fas fa-caret-down"></i></p>
                     <div id="ut-inst-drop-content" class="dropdown-content">
                         <div id="dropdown-content-header"></div>
                         <div id="dropdown-content-body">
@@ -223,11 +225,50 @@
 
                     </div>
                 </div>
-
-
             </div>
-            
+
+            <a class="icon" href="JavaScript:Void(0);" onclick="goResponsive();">
+                <svg id="icon" x="0px" y="0px" viewBox="0 0 50 50">
+                    <line class="bar" x1="6" y1="10" x2="44" y2="10"/> 
+                    <line class="bar" x1="6" y1="22" x2="44" y2="22"/>          
+                    <line class="bar" x1="6" y1="34" x2="44" y2="34"/>
+                </svg>              
+            </a>
+
         </div>
-    </header>    
+    </header>
+
+    <div id="body-container" class="container">
+        <div id="row1" class="row">
+            <div class="col-bg-1">
+                <div id="feat-post" class="post-card">
+                    <div class="img-div">
+                        <img class="image" src="Assets/img/1-topimg.jpg">
+                    </div>
+                    <div class="post-text">
+                        <p class="inst-name">UT Austin Dell Medical School</p>
+                        <h1 class="title">Underdosing, Overdosing, and Structural Barriers—Exercise is Medicine</h1>
+                        <p class="author-name">Dan Oppenheimer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div id="feat-post" class="post-card">
+                    <div class="img-div">
+                        <!-- <img class="image" src="Assets/img/1-topimg.jpg"> -->
+                    </div>
+                    <div class="post-text">
+                        <p class="inst-name">UT Austin Dell Medical School</p>
+                        <h1 class="title">Underdosing, Overdosing, and Structural Barriers—Exercise is Medicine</h1>
+                        <p class="author-name">Dan Oppenheimer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row2" class="row"></div>
+        <div id="row3" class="row"></div>
+    </div>
+    
+    <script src="Assets/js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+@media screen and (max-width: 800px) {
+
+    #main-nav-logo{
+        margin-left: 5%;
+        padding: 10px 0;
+        width: 200px;
+        display: inline-block;
+        /* background: #124E78; */
+    }
+    .main-nav #main-nav-links {
+        display: none;
+      }
+      .main-nav a.icon {
+        float: right;
+        display: block;
+      }
+
+    .main-nav.responsive #main-nav-links {
+        display: inline-block;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 300px;
+        background: #ddd;
+    }
+    .main-nav.responsive #main-nav-links .issue-date {
+        display: none;
+
+    }
+
+    .main-nav.responsive #dropdown-content-body{
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: baseline;
+        height: auto;
+        padding: 20px;
+        opacity: 10%;
+        margin-left:10px;
+    }
+
+
+    .main-nav.responsive .dropdown-content a{
+        width: 100%;
+        color: #da4a18;
+        
+    }
+
+}
