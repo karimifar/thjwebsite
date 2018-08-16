@@ -2,7 +2,9 @@
     font-family: "effra" ,sans-serif;
     box-sizing: border-box;
 }
-
+body{
+    margin: 0;
+}
 .thjBlue{
     fill:#124E78;
 }
@@ -164,21 +166,110 @@ a{
 }
 
 .container{
-    margin: 40px 10%;
-    background: yellow
+    margin: 40px 7%;
+    /* background: yellow */
+}
+.col{
+    display: inline-block;
 }
 .col-bg-1{
     width: 60%;
     padding: 0 20px;
-    float: left;
-    background: #124E78;
+    /* background: #124E78; */
 }
 .col-md-1{
     width: 40%;
     padding: 0 20px;
-    float: left;
-    background: red;
+    /* background: red; */
 }
-.image{
-    max-width: 100%;
+
+
+h1{
+    font-size: 36px;
+    font-weight: 900;
+    /* font-family: "aria-text-g2",serif; */
+}
+h2{
+    font-size: 18px;
+    font-weight: 500;
+    /* font-family: "aria-text-g2",serif; */
+}
+
+.post-text .inst-name{
+    font-family: "aria-text-g2",serif;
+    font-size: 11px;
+    margin-bottom: 10px;
+    /* text-decoration: underline; */
+    border-bottom: #E04A18 1px solid;
+    width: fit-content;
+}
+
+#feat-post .img-div{
+    display: inline-block;
+    height: 400px;
+    overflow: hidden;
+}
+
+.img-div .image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#feat-post .post-text{
+    background-color: #eee;
+    /* border-bottom: #124E78 1px solid;
+    border-left: #124E78 1px solid; */
+    margin-top: -50px;
+    margin-left: 20px;
+    width: 80%;
+    position: relative;
+    padding: 40px;
+}
+.post-text .author{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    /* font-family: "aria-text-g2",serif; */
+
+}
+.author .by{
+    font-style: italic;
+    font-family: "aria-text-g2",serif;
+    font-weight: 100;
+}
+
+.col-md-1 .img-div, .col-md-1 .post-text{
+    display: inline-block;
+
+}
+
+.col-md-1 .img-div{
+    width:45%;
+    height: 150px;
+    overflow: hidden;
+    background: #E04A18;
+    vertical-align: top;
+}
+.col-md-1 .post-text{
+    width:55%;
+}
+
+.col-md-1 .post-card{
+    height: auto;
+    border-bottom: #ddd 1px solid;
+    padding: 20px;
+    /* background: #eee; */
+    margin: 20px 0;
+    
+}
+.col-md-1 .post-card:first-child{
+    margin: 0 0 20px 0;
+    
+}
+
+
+
+#row2{
+    height: 400px;
+    background: #E04A18
 }
