@@ -10,7 +10,7 @@ body{
 }
 
 .thjOrange{
-    fill:#E04A18;
+    fill:#da4118;
 }
 .thjWhite{
     fill:#fff;
@@ -60,7 +60,7 @@ a{
     /* margin-bottom: 10px; */
     display: inline-block;
     width: 50%;
-    /* background-color: #E04A18; */
+    /* background-color: #da4118; */
     vertical-align: bottom;
     /* background: #555; */
 
@@ -88,7 +88,7 @@ a{
 #issues-nav, #ut-inst-drop{
     display: inline-block;
     vertical-align: bottom;
-    /* background: #E04A18; */
+    /* background: #da4118; */
 }
 
 #ut-inst-drop{
@@ -96,7 +96,7 @@ a{
 }
 
 #ut-inst-btn{
-    color: #E04A18;
+    color: #da4118;
     cursor: pointer;
     padding-bottom: 16px;
 }
@@ -121,7 +121,7 @@ a{
     width: 100%;
 }
 #dropdown-content-body{
-    background-color: #E04A18;
+    background-color: #da4118;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -171,7 +171,17 @@ a{
 }
 .col{
     display: inline-block;
+    vertical-align: top;
 }
+.col-bg-2{
+    display: inline-block;
+    width: 65%;
+}
+.col-sm{
+    display: inline-block;
+    width: 35%;
+}
+
 .col-bg-1{
     width: 60%;
     padding: 0 20px;
@@ -197,10 +207,10 @@ h2{
 
 .post-text .inst-name{
     font-family: "aria-text-g2",serif;
-    font-size: 11px;
-    margin-bottom: 10px;
+    font-size: 10px;
+    margin: 10px 0;
     /* text-decoration: underline; */
-    border-bottom: #E04A18 1px solid;
+    border-bottom: #da4118 1px solid;
     width: fit-content;
 }
 
@@ -228,6 +238,13 @@ h2{
 .post-text .author{
     margin-top: 15px;
     font-weight: 600;
+    font-size: 12px;
+    /* font-family: "aria-text-g2",serif; */
+
+}
+.post-text .blurb{
+    margin-top: 15px;
+    font-weight: 300;
     font-size: 14px;
     /* font-family: "aria-text-g2",serif; */
 
@@ -240,15 +257,17 @@ h2{
 
 .col-md-1 .img-div, .col-md-1 .post-text{
     display: inline-block;
+    padding: 0 3%;
+    vertical-align: top;
 
 }
 
 .col-md-1 .img-div{
     width:45%;
-    height: 150px;
+    height: 160px;
     overflow: hidden;
-    background: #E04A18;
-    vertical-align: top;
+    /* background: #da4118; */
+    
 }
 .col-md-1 .post-text{
     width:55%;
@@ -267,9 +286,97 @@ h2{
     
 }
 
+.row{
+    padding: 40px 0;
+    border-bottom: #da4118 2px solid;
+}
 
 
+
+
+/* Styles for row2 */
 #row2{
-    height: 400px;
-    background: #E04A18
+    /* background: #eee; */
+}
+.col-full{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.col-full .post-card:hover{
+    background: #eee;
+}
+.col-full .post-card{
+    width:20%;
+    min-width: 200px;
+    flex-grow: 1;
+    padding: 20px;
+    cursor: pointer;
+}
+.col-full .img-div{
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.post-date{
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+
+
+/* Row3 styling */
+#row3{
+    /* height:800px; */
+}
+
+
+
+#row3 .col{
+    /* height: 500px; */
+}
+#row3 .col-bg-1{
+    /* background: #da4118; */
+}
+
+#row3 .col-md-1{
+    /* background: #ddd; */
+}
+.twt-feed{
+    width:100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    /* border-right: #555 1px solid; */
+}
+.twt-feed img{
+    width:100%;
+    
+}
+.sub-card .form{
+    display: inline-block;
+    width: 60%;
+    padding: 20px;
+}
+.sub-card .head{
+    font-family: 'aria-text-g2' , serif;
+    font-weight: 900;
+    font-size: 52px;
+    width: 40%;
+    color: #124E78;
+    padding: 4%;
+    display: inline-block;
+    /* text-transform: uppercase */
+}
+.sub-card .head .light{
+    font-weight: 100;
+    color: #da4118;
+
+}
+.input-container{
+    margin: 20px;
 }
