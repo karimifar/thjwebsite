@@ -2,6 +2,14 @@
     font-family: "effra" ,sans-serif;
     box-sizing: border-box;
 }
+
+input:focus{
+    box-shadow: none;
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
 body{
     margin: 0;
 }
@@ -179,9 +187,12 @@ a{
 }
 .col-sm{
     display: inline-block;
-    width: 35%;
+    width: 25%;
 }
-
+.col-md-2{
+    display: inline-block;
+    width: 50%;
+}
 .col-bg-1{
     width: 60%;
     padding: 0 20px;
@@ -291,6 +302,10 @@ h2{
     border-bottom: #da4118 2px solid;
 }
 
+.row:last-child{
+    padding: 80px 0 70px 0;
+    border-bottom: 0;
+}
 
 
 
@@ -351,32 +366,154 @@ h2{
     display: inline-block;
     vertical-align: top;
     padding: 20px;
-    /* border-right: #555 1px solid; */
+    border-left: #555 1px solid;
 }
 .twt-feed img{
     width:100%;
     
 }
+.sub-card{
+    margin-bottom: 50px;
+    padding: 50px 20px;
+    background: #da4118;
+    border-radius: 10px;
+    
+}
 .sub-card .form{
     display: inline-block;
-    width: 60%;
-    padding: 20px;
+    width: 70%;
+    padding:  40px;
+    
+    /* vertical-align: middle; */
 }
 .sub-card .head{
+    vertical-align: middle;
     font-family: 'aria-text-g2' , serif;
     font-weight: 900;
     font-size: 52px;
-    width: 40%;
-    color: #124E78;
+    width: 30%;
+    color: white;
     padding: 4%;
     display: inline-block;
+    border-right: #eee 1px solid;
     /* text-transform: uppercase */
 }
 .sub-card .head .light{
     font-weight: 100;
-    color: #da4118;
-
+    color: #ddd;
+    font-size: 30px;
+    
 }
 .input-container{
-    margin: 20px;
+    padding: 20px;
+    padding-right: 0;
+    color: #eee;
+    font-weight: 100;
+    width:80%;
+    display: inline-block;
+}
+
+.sub-card .form-btn{
+    display: inline-block;
+    width: 20%;
+    padding: 20px;
+    /* background: red; */
+}
+
+.sub-card .signupbtn{
+    background: none;
+    border: none;
+    border-radius: 25px;
+    width: 50px;
+    font-size: 40px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    color: white;    
+}
+
+.input-container label{
+    font-weight: 100;
+    width: fit-content;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+.input-container input{
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    height: 60px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #124E78;
+}
+.around-system-container{
+    padding: 50px 0;
+    border-top: #555 1px solid;
+
+}
+.around-system-container .head{
+    color: #124E78;
+    padding: 0 5px;
+    border-bottom: #da4118 1px solid;
+    width: fit-content;
+}
+
+
+.around-system{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+}
+.around-card{
+    width: 33%;
+    min-width: 150px;
+    padding: 20px;
+}
+
+.around-card:hover{
+    background: #eee;
+}
+.around-card .inst-name{
+    background: #da4118;
+    border-radius: 2px;
+    width: fit-content;
+    padding: 3px 4px 1px;
+    color: white;
+    font-family: 'aria-text-g2' , serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.around-card .text-body{
+    font-weight: 100;
+}
+
+.around-card .link{
+    font-weight: 500;
+}
+
+
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.all-wrapper{
+    flex: 1 0 auto;
+}
+footer{
+    flex-shrink: 0;
+    height: 300px;
+    background: #124E78;
 }
