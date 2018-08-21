@@ -1,6 +1,7 @@
 *{
     font-family: "effra" ,sans-serif;
     box-sizing: border-box;
+    line-height: 1.1em;
 }
 
 input:focus{
@@ -185,13 +186,17 @@ a{
     display: inline-block;
     width: 65%;
 }
-.col-sm{
+.col-half{
     display: inline-block;
-    width: 25%;
+    width: 50%;
+}
+.col-sm-2{
+    display: inline-block;
+    width: 35%;
 }
 .col-md-2{
     display: inline-block;
-    width: 50%;
+    width: 75%;
 }
 .col-bg-1{
     width: 60%;
@@ -230,6 +235,41 @@ h2{
     height: 400px;
     overflow: hidden;
 }
+
+.col-head{
+    font-weight: 500;
+    border-bottom: #CCD9E2 3px solid;
+    color: #124E78;
+    background: #eee;
+    width: 100%;
+    padding: 5px 10px;
+    text-align: right;
+}
+.head-div{
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+    justify-content: flex-end;
+}
+
+#top-posts{
+    width: fit-content;
+}
+
+#row2{
+    padding-top: 0;
+}
+#row2 .head-div{
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.col-md-1 .post-card{
+    /* background: #eee; */
+}
+/* #row1 .col-md-1{
+    background: #eee;
+} */
+
 
 .img-div .image{
     object-fit: cover;
@@ -365,7 +405,7 @@ h2{
     width:100%;
     display: inline-block;
     vertical-align: top;
-    padding: 20px;
+    padding: 10px 50px;
     border-left: #555 1px solid;
 }
 .twt-feed img{
@@ -375,7 +415,7 @@ h2{
 .sub-card{
     margin-bottom: 50px;
     padding: 50px 20px;
-    background: #da4118;
+    background: #CCD9E2;
     border-radius: 10px;
     
 }
@@ -392,7 +432,7 @@ h2{
     font-weight: 900;
     font-size: 52px;
     width: 30%;
-    color: white;
+    color: #124E78;
     padding: 4%;
     display: inline-block;
     border-right: #eee 1px solid;
@@ -400,14 +440,14 @@ h2{
 }
 .sub-card .head .light{
     font-weight: 100;
-    color: #ddd;
+    color: #da4118;
     font-size: 30px;
     
 }
 .input-container{
     padding: 20px;
     padding-right: 0;
-    color: #eee;
+    color: #da4118;
     font-weight: 100;
     width:80%;
     display: inline-block;
@@ -458,9 +498,11 @@ h2{
 
 }
 .around-system-container .head{
+    border-bottom: #CCD9E2 3px solid;
+    background: #eee;
     color: #124E78;
     padding: 0 5px;
-    border-bottom: #da4118 1px solid;
+    /* border-bottom: #da4118 1px solid; */
     width: fit-content;
 }
 
@@ -514,6 +556,70 @@ body{
 }
 footer{
     flex-shrink: 0;
-    height: 300px;
+    height: auto;
+    min-height: 250px;
     background: #124E78;
+    padding: 40px 20%;
+}
+
+footer .col{
+    padding: 20px;
+    color: #CCD9E2;
+    font-weight: 100;
+    
+}
+
+footer .col-half{
+    color: white;
+}
+footer p{
+    /* font-family: 'aria-text-g2' , serif; */
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-bottom: 1.1em;
+}
+
+footer img{
+    width: 100%;
+}
+#thj-logo-f{
+    width: 35%;
+}
+
+footer .image-div{
+    padding: 10px 0;
+    width: 80%;
+}
+
+footer .col-md-2{
+    border-left: rgba(204, 217, 226, 0.6) 1px solid;
+    border-right: rgba(204, 217, 226, 0.6) 1px solid;
+}
+
+footer .social-icon{
+    padding: 2px;
+}
+
+footer ul{
+    columns: 1;
+}
+footer li{
+    margin-bottom: 5px;
+}
+
+footer .blurb{
+    color: #CCD9E2;
+    /* font-family: 'aria-text-g2' , serif; */
+    padding: 20px 20px 0 20px;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+footer p.head{
+    color: #CCD9E2;
+    font-weight: 100;
+    font-size: 16px;
+    border-bottom: #da4118 1px solid;
+    width: fit-content;
+    font-family: 'aria-text-g2' , serif; 
 }
