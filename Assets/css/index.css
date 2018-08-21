@@ -406,11 +406,24 @@ h2{
     display: inline-block;
     vertical-align: top;
     padding: 10px 50px;
+    
+}
+
+.tweet-col{
     border-left: #555 1px solid;
 }
 .twt-feed img{
     width:100%;
     
+}
+.tweet-col .head-div{
+    margin-top: 50px;
+}
+
+.tweet-col .events-div{
+    height: 200px;
+    background: #eee;
+    margin-top: 20px;
 }
 .sub-card{
     margin-bottom: 50px;
