@@ -1,3 +1,4 @@
+/* =========== global styles =========== */
 *{
     font-family: "effra" ,sans-serif;
     box-sizing: border-box;
@@ -24,56 +25,99 @@ body{
 .thjWhite{
     fill:#fff;
 }
+a{
+    text-decoration: none;
+}
 
+h1{
+    font-size: 36px;
+    font-weight: 900;
+}
+h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+.container{
+    margin: 40px 7%;
+}
+
+.col{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col-bg-2{
+    display: inline-block;
+    width: 65%;
+}
+
+.col-half{
+    display: inline-block;
+    width: 50%;
+}
+.col-sm-2{
+    display: inline-block;
+    width: 35%;
+}
+.col-md-2{
+    display: inline-block;
+    width: 75%;
+}
+.col-bg-1{
+    width: 60%;
+    padding: 0 20px;
+}
+.col-md-1{
+    width: 40%;
+    padding: 0 20px;
+}
+/* =========== END o global styles =========== */
+
+
+
+/* =========== Navbar styles =========== */
 #sec-nav{
     background: #555;
     height: 28px;
 }
 
-a{
-    text-decoration: none;
-}
-
 #sec-nav-links{
     margin-left: 40px;;
     display: inline-block;
-
 }
+
 .sec-nav-link{
     display: inline-block;
     color: white;
     padding: 8px 12px;
     font-size: 13px;
-
 }
+
 .sec-nav-li{
     text-transform: uppercase;
 }
 
 #main-nav{
-    /* margin: 0 10%; */
     width: 100%;
     border-bottom: #ddd 1px solid;
     background: #fff;
+    padding: 0 15%;
 }
+
 #main-nav-logo{
-    margin-left: 20%;
+    /* margin-left: 20%; */
     padding: 10px 0;
-    width: 300px;
+    width: 20%;
     display: inline-block;
-    /* background: #124E78; */
 }
 
 #main-nav-links{
-    margin-left: 5%;
-    /* margin-bottom: 10px; */
+    padding-left: 5%;
     display: inline-block;
-    width: 50%;
-    /* background-color: #da4118; */
+    width: 80%;
     vertical-align: bottom;
-    /* background: #555; */
-
 }
+
 .main-nav-link{
     color: black;
     display: inline-block;
@@ -97,7 +141,6 @@ a{
 #issues-nav, #ut-inst-drop{
     display: inline-block;
     vertical-align: bottom;
-    /* background: #da4118; */
 }
 
 #ut-inst-drop{
@@ -109,6 +152,7 @@ a{
     cursor: pointer;
     padding-bottom: 16px;
 }
+
 #ut-inst-btn:hover{
     background: #eee;
 }
@@ -140,7 +184,6 @@ a{
     padding: 20px 15% 20px 30%;
 }
 
-
 .dropdown-content a {
     font-family: "effra",sans-serif;
     font-size: 14px;
@@ -152,10 +195,6 @@ a{
     display: inline-block;
     text-align: left;
 }
-
-/* .dropdown:hover .dropdown-content {
-    display: block;
-} */
 
 .clicked-dropdown{
     display: block;
@@ -173,59 +212,15 @@ a{
     width: 40px;
     display: none;
 }
-
-.container{
-    margin: 40px 7%;
-    /* background: yellow */
-}
-.col{
-    display: inline-block;
-    vertical-align: top;
-}
-.col-bg-2{
-    display: inline-block;
-    width: 65%;
-}
-.col-half{
-    display: inline-block;
-    width: 50%;
-}
-.col-sm-2{
-    display: inline-block;
-    width: 35%;
-}
-.col-md-2{
-    display: inline-block;
-    width: 75%;
-}
-.col-bg-1{
-    width: 60%;
-    padding: 0 20px;
-    /* background: #124E78; */
-}
-.col-md-1{
-    width: 40%;
-    padding: 0 20px;
-    /* background: red; */
-}
+/* =========== END of Navbar styles =========== */
 
 
-h1{
-    font-size: 36px;
-    font-weight: 900;
-    /* font-family: "aria-text-g2",serif; */
-}
-h2{
-    font-size: 18px;
-    font-weight: 500;
-    /* font-family: "aria-text-g2",serif; */
-}
 
+/* =========== Home page body styling =========== */
 .post-text .inst-name{
     font-family: "aria-text-g2",serif;
     font-size: 10px;
     margin: 10px 0;
-    /* text-decoration: underline; */
     border-bottom: #da4118 1px solid;
     width: fit-content;
 }
