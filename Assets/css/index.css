@@ -41,9 +41,32 @@ h2{
     margin: 40px 7%;
 }
 
+.page-banner{
+    width: 100%;
+    height: 400px;
+    background: #CCD9E2;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.page-banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.page-banner .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(140, 2, 226, 0.4);
+    position: absolute;
+    top:0;
+}
+
 .col{
     display: inline-block;
     vertical-align: top;
+    padding: 0 20px;
 }
 
 .col-bg-2{
@@ -65,11 +88,17 @@ h2{
 }
 .col-bg-1{
     width: 60%;
-    padding: 0 20px;
+    
 }
 .col-md-1{
     width: 40%;
-    padding: 0 20px;
+}
+.col-full{
+    width: 100%;
+}
+.row{
+    padding: 40px 0;
+    border-bottom: #da4118 2px solid;
 }
 /* =========== END o global styles =========== */
 
@@ -101,35 +130,40 @@ h2{
     width: 100%;
     border-bottom: #ddd 1px solid;
     background: #fff;
-    padding: 0 15%;
+    padding: 0 18%;
 }
 
 #main-nav-logo{
     /* margin-left: 20%; */
     padding: 10px 0;
-    width: 20%;
+    width: 24%;
     display: inline-block;
 }
 
+#nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+    justify-content: flex-end;
+}
 #main-nav-links{
     padding-left: 5%;
     display: inline-block;
-    width: 80%;
+    width: 76%;
     vertical-align: bottom;
 }
 
 .main-nav-link{
     color: black;
     display: inline-block;
-    padding: 8px 18px;
-    font-size: 18px;
 }
 
 .main-nav-li{
     font-family: "aria-text-g2",serif;
     font-weight: 900;
     color: #555;
-    padding: 10px;
+    padding: 18px 18px;
+    font-size: 18px;
 }
 
 .issue-date{
@@ -216,341 +250,7 @@ h2{
 
 
 
-/* =========== Home page body styling =========== */
-.post-text .inst-name{
-    font-family: "aria-text-g2",serif;
-    font-size: 10px;
-    margin: 10px 0;
-    border-bottom: #da4118 1px solid;
-    width: fit-content;
-}
-
-#feat-post .img-div{
-    display: inline-block;
-    height: 400px;
-    overflow: hidden;
-}
-
-.col-head{
-    font-weight: 500;
-    border-bottom: #CCD9E2 3px solid;
-    color: #124E78;
-    background: #eee;
-    width: 100%;
-    padding: 5px 10px;
-    text-align: right;
-}
-.head-div{
-    display: flex;
-    flex-direction: row;
-    flex-grow: inherit;
-    justify-content: flex-end;
-}
-
-#top-posts{
-    width: fit-content;
-}
-
-#row2{
-    padding-top: 0;
-}
-#row2 .head-div{
-    justify-content: flex-start;
-    margin-bottom: 10px;
-}
-.col-md-1 .post-card{
-    /* background: #eee; */
-}
-/* #row1 .col-md-1{
-    background: #eee;
-} */
-
-
-.img-div .image{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-#feat-post .post-text{
-    background-color: #eee;
-    /* border-bottom: #124E78 1px solid;
-    border-left: #124E78 1px solid; */
-    margin-top: -50px;
-    margin-left: 20px;
-    width: 80%;
-    position: relative;
-    padding: 40px;
-}
-.post-text .author{
-    margin-top: 15px;
-    font-weight: 600;
-    font-size: 12px;
-    /* font-family: "aria-text-g2",serif; */
-
-}
-.post-text .blurb{
-    margin-top: 15px;
-    font-weight: 300;
-    font-size: 14px;
-    /* font-family: "aria-text-g2",serif; */
-
-}
-.author .by{
-    font-style: italic;
-    font-family: "aria-text-g2",serif;
-    font-weight: 100;
-}
-
-.col-md-1 .img-div, .col-md-1 .post-text{
-    display: inline-block;
-    padding: 0 3%;
-    vertical-align: top;
-
-}
-
-.col-md-1 .img-div{
-    width:45%;
-    height: 160px;
-    overflow: hidden;
-    /* background: #da4118; */
-    
-}
-.col-md-1 .post-text{
-    width:55%;
-}
-
-.col-md-1 .post-card{
-    height: auto;
-    border-bottom: #ddd 1px solid;
-    padding: 20px;
-    /* background: #eee; */
-    margin: 20px 0;
-    
-}
-.col-md-1 .post-card:first-child{
-    margin: 0 0 20px 0;
-    
-}
-
-.row{
-    padding: 40px 0;
-    border-bottom: #da4118 2px solid;
-}
-
-.row:last-child{
-    padding: 80px 0 70px 0;
-    border-bottom: 0;
-}
-
-
-
-/* Styles for row2 */
-#row2{
-    /* background: #eee; */
-}
-.col-full{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.col-full .post-card:hover{
-    background: #eee;
-}
-.col-full .post-card{
-    width:20%;
-    min-width: 200px;
-    flex-grow: 1;
-    padding: 20px;
-    cursor: pointer;
-}
-.col-full .img-div{
-    height: 160px;
-    margin-bottom: 20px;
-}
-
-.post-date{
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 100;
-    margin-bottom: 10px;
-}
-
-
-
-/* Row3 styling */
-#row3{
-    /* height:800px; */
-}
-
-
-
-#row3 .col{
-    /* height: 500px; */
-}
-#row3 .col-bg-1{
-    /* background: #da4118; */
-}
-
-#row3 .col-md-1{
-    /* background: #ddd; */
-}
-.twt-feed{
-    width:100%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px 50px;
-    
-}
-
-.tweet-col{
-    border-left: #555 1px solid;
-}
-.twt-feed img{
-    width:100%;
-    
-}
-.tweet-col .head-div{
-    margin-top: 50px;
-}
-
-.tweet-col .events-div{
-    height: 200px;
-    background: #eee;
-    margin-top: 20px;
-}
-.sub-card{
-    margin-bottom: 50px;
-    padding: 50px 20px;
-    background: #CCD9E2;
-    border-radius: 10px;
-    
-}
-.sub-card .form{
-    display: inline-block;
-    width: 70%;
-    padding:  40px;
-    
-    /* vertical-align: middle; */
-}
-.sub-card .head{
-    vertical-align: middle;
-    font-family: 'aria-text-g2' , serif;
-    font-weight: 900;
-    font-size: 52px;
-    width: 30%;
-    color: #124E78;
-    padding: 4%;
-    display: inline-block;
-    border-right: #eee 1px solid;
-    /* text-transform: uppercase */
-}
-.sub-card .head .light{
-    font-weight: 100;
-    color: #da4118;
-    font-size: 30px;
-    
-}
-.input-container{
-    padding: 20px;
-    padding-right: 0;
-    color: #da4118;
-    font-weight: 100;
-    width:80%;
-    display: inline-block;
-}
-
-.sub-card .form-btn{
-    display: inline-block;
-    width: 20%;
-    padding: 20px;
-    /* background: red; */
-}
-
-.sub-card .signupbtn{
-    background: none;
-    border: none;
-    border-radius: 25px;
-    width: 50px;
-    font-size: 40px;
-    height: 50px;
-    padding: 0;
-    margin: 0;
-    color: white;    
-}
-
-.input-container label{
-    font-weight: 100;
-    width: fit-content;
-    display: block;
-    font-size: 12px;
-    margin-bottom: 2px;
-    margin-left: 5px;
-}
-.input-container input{
-    width: 100%;
-    margin: auto;
-    display: inline-block;
-    height: 60px;
-    padding: 5px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    border: none;
-    background: rgba(255, 255, 255, 0.9);
-    color: #124E78;
-}
-.around-system-container{
-    padding: 50px 0;
-    border-top: #555 1px solid;
-
-}
-.around-system-container .head{
-    border-bottom: #CCD9E2 3px solid;
-    background: #eee;
-    color: #124E78;
-    padding: 0 5px;
-    /* border-bottom: #da4118 1px solid; */
-    width: fit-content;
-}
-
-
-.around-system{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 20px;
-}
-.around-card{
-    width: 33%;
-    min-width: 150px;
-    padding: 20px;
-}
-
-.around-card:hover{
-    background: #eee;
-}
-.around-card .inst-name{
-    background: #da4118;
-    border-radius: 2px;
-    width: fit-content;
-    padding: 3px 4px 1px;
-    color: white;
-    font-family: 'aria-text-g2' , serif;
-    font-size: 12px;
-    margin-bottom: 10px;
-    font-weight: 100;
-}
-
-.around-card .text-body{
-    font-weight: 100;
-}
-
-.around-card .link{
-    font-weight: 500;
-}
-
-
+/* =========== footer styling =========== */
 html{
     height: 100%;
 }
@@ -581,7 +281,6 @@ footer .col-half{
     color: white;
 }
 footer p{
-    /* font-family: 'aria-text-g2' , serif; */
     font-size: 14px;
     line-height: 1.2em;
     margin-bottom: 1.1em;
@@ -617,7 +316,6 @@ footer li{
 
 footer .blurb{
     color: #CCD9E2;
-    /* font-family: 'aria-text-g2' , serif; */
     padding: 20px 20px 0 20px;
     font-size: 14px;
     font-weight: 100;
@@ -631,3 +329,8 @@ footer p.head{
     width: fit-content;
     font-family: 'aria-text-g2' , serif; 
 }
+/* =========== End of footer styling =========== */
+
+
+
+

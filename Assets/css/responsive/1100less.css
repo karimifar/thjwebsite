@@ -1,0 +1,33 @@
+@media screen and (max-width: 1100px) {
+    body{
+        /* background: red; */
+    }
+    .container{
+        margin: 10px 5px;
+    }
+
+    .col{
+        padding: 0 10px;
+    }
+    #main-nav{
+        /* padding: 0 5%; */
+        padding: 0 30px;
+    }
+    .main-nav-li{
+        padding: 18px 8px;
+        font-size: 14px;
+    }
+
+    #main-nav-logo{
+        padding: 10px 0;
+        width: 25%;
+        display: inline-block;
+    }
+    
+    #main-nav-links{
+        padding-left: 20px;
+        display: inline-block;
+        width: 70%;
+        vertical-align: bottom;
+    }
+}
