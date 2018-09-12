@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- customized bootstrap -->
+    <link rel="stylesheet" href="Assets/bootstrap/css/bootstrap.min.css">
+    <script src="Assets/bootstrap/js/bootstrap.min.js"></script>
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/cox2imp.css">
@@ -22,7 +25,7 @@
 <body>
     <div class= "all-wrapper">
         <header>
-            <div id="sec-nav" class="navbar sec-nav">
+            <div id="sec-nav" class="mynavbar sec-nav">
                 <ul id="sec-nav-links">
                     <a class="sec-nav-link" href="">
                         <li id="sec-nav-subs" class="sec-nav-li">Subscribe</li>
@@ -36,7 +39,7 @@
                 </ul>
             </div>
 
-            <div id="main-nav" class="navbar main-nav">
+            <div id="main-nav" class="mynavbar main-nav">
                 <div id="main-nav-logo">
                     <svg version="1.1" id="Isolation_Mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                     y="0px" viewBox="0 0 280 97" style="enable-background:new 0 0 280 97;" xml:space="preserve">
@@ -208,11 +211,11 @@
                                 <li id="main-nav-topic3" class="main-nav-li"><p id="topic3" class="issue-date">Jun 18<br></p>Opioids</li>
                             </a>
                         </ul>
-                        <div id="ut-inst-drop" class="dropdown">
-                            <p tabindex="4" id="ut-inst-btn" class="main-nav-li" onclick="showDropDown();">News by<br>INSTITUTIONS<i class="fas fa-caret-down"></i></p>
-                            <div id="ut-inst-drop-content" class="dropdown-content">
+                        <div id="ut-inst-drop" class="mydropdown">
+                            <p id="ut-inst-btn" class="main-nav-li" data-toggle="collapse" tabindex="4" href="#ut-inst-drop-content">News by<br>INSTITUTIONS<i class="fas fa-caret-down"></i></p>
+                            <div id="ut-inst-drop-content" class="dropdown-content collapse">
                                 <div id="dropdown-content-header"></div>
-                                <div id="dropdown-content-body">
+                                <div  id="dropdown-content-body">
                                     <a href="" class="inst-link">UT Austin</a>
                                     <a href="" class="inst-link">UT Dallas</a>
                                     <a href="" class="inst-link">UTMB</a>
@@ -252,6 +255,31 @@
         </div>
         <div id="body-container" class="container">
 <!-- page body content starts here -->
+            <div class="headline">
+                <div class="title">
+                    <h1 class="story">Underdosing, Overdosing, and Structural Barriers—Exercise is Medicine</h1>
+                    <div class="byline">
+                        <p class="author"><span class="by">by: </span>Susan Kirtz</p>
+                        <p class="author-byline">Managing Editor, Texas Health Journal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="body-text">
+                <div class="inline-img">
+                        <img src="Assets/img/postImage4.png">
+                        <p class="img-caption">Dr Benjamin Levine Lorem ipsum caption something</p>
+                </div>
+                <p>Dr Benjamin Levine  was only 10 years old when the famous Dallas Bedrest and Training Study took place. Five young men were put to bed for three weeks and then put through endurance training for two months.</p>
+                <p>Thirty years later, Levine did a follow-up study with the same five men. The new study asked what happened to these men from 30 years of aging, and it turned out that not a single one of these volunteers was in worse shape 30 years later than they were after three weeks of bedrest when they were in their 20’s.</p>
+                
+                
+                <p>In a nutshell: Three weeks of bedrest were proven to be worse for the body’s ability to do physical work than 30 years of aging. This tells us that some component of what we typically think of as the inevitable consequence of cardiovascular aging is actually modifiable, reversible and related to physical activity.</p>
+                <p>One day should incorporate an exercise that lasts at least an hour and is done for fun. At least one session should be high intensity (for example the Norwegian 4X4 workout). Two to three days a week should be moderate intensity exercise—30 minutes of something intense enough to work up a sweat, a little shortness of breath, but not so hard that you cannot have a conversation. Finally, there should be at least one day a week of some kind of strength training, which can be separate or on the same day as one of the other sessions.</p>
+                <p>One day should incorporate an exercise that lasts at least an hour and is done for fun. At least one session should be high intensity (for example the Norwegian 4X4 workout). Two to three days a week should be moderate intensity exercise—30 minutes of something intense enough to work up a sweat, a little shortness of breath, but not so hard that you cannot have a conversation. Finally, there should be at least one day a week of some kind of strength training, which can be separate or on the same day as one of the other sessions.</p>
+            </div><!--
+         --><div class="sidebar">
+
+            </div>
             
         </div>
     </div>

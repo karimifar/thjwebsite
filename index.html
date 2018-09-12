@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- customized bootstrap -->
+    <link rel="stylesheet" href="Assets/bootstrap/css/bootstrap.min.css">
+    <script src="Assets/bootstrap/js/bootstrap.min.js"></script>
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/cox2imp.css">
@@ -22,7 +25,7 @@
 <body>
     <div class= "all-wrapper">
         <header>
-            <div id="sec-nav" class="navbar sec-nav">
+            <div id="sec-nav" class="mynavbar sec-nav">
                 <ul id="sec-nav-links">
                     <a class="sec-nav-link" href="">
                         <li id="sec-nav-subs" class="sec-nav-li">Subscribe</li>
@@ -36,7 +39,7 @@
                 </ul>
             </div>
 
-            <div id="main-nav" class="navbar main-nav">
+            <div id="main-nav" class="mynavbar main-nav">
                 <div id="main-nav-logo">
                     <svg version="1.1" id="Isolation_Mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                     y="0px" viewBox="0 0 280 97" style="enable-background:new 0 0 280 97;" xml:space="preserve">
@@ -208,11 +211,11 @@
                                 <li id="main-nav-topic3" class="main-nav-li"><p id="topic3" class="issue-date">Jun 18<br></p>Opioids</li>
                             </a>
                         </ul>
-                        <div id="ut-inst-drop" class="dropdown">
-                            <p tabindex="4" id="ut-inst-btn" class="main-nav-li" onclick="showDropDown();">News by<br>INSTITUTIONS<i class="fas fa-caret-down"></i></p>
-                            <div id="ut-inst-drop-content" class="dropdown-content">
+                        <div id="ut-inst-drop" class="mydropdown">
+                            <p id="ut-inst-btn" class="main-nav-li" data-toggle="collapse" tabindex="4" href="#ut-inst-drop-content">News by<br>INSTITUTIONS<i class="fas fa-caret-down"></i></p>
+                            <div id="ut-inst-drop-content" class="dropdown-content collapse">
                                 <div id="dropdown-content-header"></div>
-                                <div id="dropdown-content-body">
+                                <div  id="dropdown-content-body">
                                     <a href="" class="inst-link">UT Austin</a>
                                     <a href="" class="inst-link">UT Dallas</a>
                                     <a href="" class="inst-link">UTMB</a>
