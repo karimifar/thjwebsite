@@ -77,25 +77,25 @@
     font-weight: 100;
 }
 
-.col-md-1 .img-div, .col-md-1 .post-text{
+.col-40 .img-div, .col-40 .post-text{
     display: inline-block;
     padding: 0 3%;
     vertical-align: top;
 
 }
 
-.col-md-1 .img-div{
+.col-40 .img-div{
     width:45%;
     height: 160px;
     overflow: hidden;
     /* background: #da4118; */
     
 }
-.col-md-1 .post-text{
+.col-40 .post-text{
     width:55%;
 }
 
-.col-md-1 .post-card{
+.col-40 .post-card{
     height: auto;
     border-bottom: #ddd 1px solid;
     padding: 20px;
@@ -103,7 +103,7 @@
     margin: 20px 0;
     
 }
-.col-md-1 .post-card:first-child{
+.col-40 .post-card:first-child{
     margin: 0 0 20px 0;
     
 }

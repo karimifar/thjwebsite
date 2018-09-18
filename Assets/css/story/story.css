@@ -349,8 +349,6 @@ p.img-caption{
 .article-footer .sub-card{
     margin-top: 0px;
     padding: 20px;
-    background: #CCD9E2;
-    color: #124E78;
 }
 
 .article-footer .related-stories{
@@ -368,6 +366,7 @@ p.img-caption{
 
 .related-stories .title{
     font-weight: 500;
+    color: #555;
 }
 .related-stories .inst-name{
     /* font-family: "aria-text-g2",serif; */

@@ -80,34 +80,35 @@ h2{
     vertical-align: top;
     padding: 0 20px;
 }
-
-.col-bg-2{
-    display: inline-block;
-    width: 65%;
-}
-
-.col-half{
-    display: inline-block;
-    width: 50%;
-}
-.col-sm-2{
-    display: inline-block;
-    width: 35%;
-}
-.col-md-2{
-    display: inline-block;
-    width: 75%;
-}
-.col-bg-1{
-    width: 60%;
-    
-}
-.col-md-1{
-    width: 40%;
-}
 .col-full{
     width: 100%;
 }
+.col-75{
+    width: 75%;
+}
+.col-65{
+    width: 65%;
+}
+.col-60{
+    width: 60%;  
+}
+.col-half{
+    width: 50%;
+}
+.col-55{
+    width: 55%;
+}
+.col-45{
+    width: 45%;
+}
+.col-40{
+    width: 40%;
+}
+.col-35{
+    display: inline-block;
+    width: 35%;
+}
+
 .row{
     padding: 40px 0;
     border-bottom: #da4118 2px solid;
@@ -308,7 +309,7 @@ footer .image-div{
     width: 80%;
 }
 
-footer .col-md-2{
+footer .col-75{
     border-left: rgba(204, 217, 226, 0.6) 1px solid;
     border-right: rgba(204, 217, 226, 0.6) 1px solid;
 }
