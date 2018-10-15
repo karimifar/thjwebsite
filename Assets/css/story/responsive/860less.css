@@ -1,0 +1,14 @@
+@media screen and (max-width: 860px) {
+    .container .headline .title{
+        margin-left:5%;
+        width: 80%;
+    }
+    .body-text{
+        margin-left: 5%;
+        width: 80%;
+    }
+
+    .sidebar{
+        display: none;
+    }
+}
