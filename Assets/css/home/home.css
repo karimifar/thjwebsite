@@ -42,7 +42,9 @@
     margin-bottom: 10px;
 }
 
-
+a:hover{
+    text-decoration: none;
+}
 
 .img-div .image{
     object-fit: cover;
